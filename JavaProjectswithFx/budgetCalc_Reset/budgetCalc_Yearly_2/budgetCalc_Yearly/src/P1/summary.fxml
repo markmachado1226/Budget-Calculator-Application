@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="P1.MainController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="Total Income:" />
+        <Label text="Total Expenses:" GridPane.rowIndex="1" />
+        <Label text="Savings:" GridPane.rowIndex="2" />
+        <Label text="Savings Goal:" GridPane.rowIndex="3" />
+        <Label text="Budget Status:" GridPane.rowIndex="4" />
+        <Label text="Remaining Budget:" GridPane.rowIndex="5" />
+
+        <Label fx:id="totalIncomeLabel" GridPane.columnIndex="1" />
+        <Label fx:id="totalExpensesLabel" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        <Label fx:id="savingsLabel" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+        <Label fx:id="savingsGoalLabel" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+        <Label fx:id="budgetStatusLabel" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+        <Label fx:id="budgetStatusValueLabel" GridPane.rowIndex="4" GridPane.columnIndex="2" />
+        <Label fx:id="remainingBudgetLabel" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+    </children>
+</GridPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="Monthly Income:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="monthlyIncomeField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label text="Monthly Expenses:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="monthlyExpensesField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Label text="Savings Goal:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="savingsGoalField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Button fx:id="saveButton" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#handleSaveButtonAction" />
+    <Label text="Monthly Income: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Label fx:id="monthlyIncomeLabel" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Label text="Monthly Expenses: " GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <Label fx:id="monthlyExpensesLabel" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <Label text="Savings Goal: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <Label fx:id="savingsGoalLabel" text="" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <Label text="Remaining Budget: " GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <Label fx:id="remainingBudgetLabel" text="" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+</GridPane>
+
